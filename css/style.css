@@ -1,5 +1,6 @@
 :root{
 	--border-color:#7B68EE;
+	--border-color-hover:skyblue;
 	--bg-section:#836FFF;
 	--color-text:#483D8B;
 }
@@ -23,17 +24,43 @@ body{
 
 @media (min-width:240px) and (max-width:599px)
 {
+	html{
+		background: var(--bg-section);
+	}
+
 	section{
 		background: var(--bg-section);
+		margin-top:50px;
 	}
 
 	.eye-pass{
 		display:block;
 		position:absolute;
-		top:240px;
+		top:290px;
 		right:calc(100% - 98%);
 	}
 
+}
+
+@media (min-width:600px) and (max-width:998px){
+	section{
+		background: var(--bg-section);
+		border-radius:5px;
+		border:1px solid #7B68EE;
+		box-shadow: 2px 3px 3px 3px gray;
+		margin:auto;
+		margin-top:100px;
+		width:380px;
+	}
+
+	.eye-pass{
+		display:flex;
+		flex-direction: row-reverse;
+		align-items: right;
+		margin-left:335px;
+		position:absolute;
+		top:340px;
+	}
 }
 
 @media (min-width:999px) and (max-width:1024px)
@@ -45,14 +72,14 @@ body{
 		box-shadow: 2px 3px 3px 3px gray;
 		margin:auto;
 		margin-top:100px;
-		width:420px;
+		width:360px;
 	}
 
 	.eye-pass{
 		display:block;
 		position:absolute;
 		top:340px;
-		right:310px;
+		right:330px;
 	}
 }
 
@@ -84,6 +111,10 @@ img{
 	width:95%;
 }
 
+.user :hover{
+	border:1px solid var(--border-color-hover);
+}
+
 .pass{
 	background:#ffffff;
 	color:#483D8B;
@@ -97,6 +128,10 @@ img{
 	width:95%;
 }
 
+.pass :hover{
+	border:1px solid var(--border-color-hover);
+}
+
 .lost-password{
 	text-align:center;
 }
@@ -107,6 +142,25 @@ img{
 	text-decoration:none;
 }
 
+.lost-password a:hover{
+	color:#000;
+	text-decoration:underline;
+}
+
+.new-account{
+	text-align:center;
+}
+
+.new-account a{
+	color:#000;
+	font-weight:700;
+	text-decoration:none;
+}
+
+.new-account a:hover{
+	color:#000;
+	text-decoration:underline;
+}
 
 
 button{
@@ -120,4 +174,5 @@ button{
 	text-align:center;
 	width:95%;
 }
+
 
