@@ -1,0 +1,123 @@
+:root{
+	--border-color:#7B68EE;
+	--bg-section:#836FFF;
+	--color-text:#483D8B;
+}
+
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+html{
+
+}
+
+body{
+	background:#ffffff;
+	color:#000;
+}
+
+
+
+@media (min-width:240px) and (max-width:599px)
+{
+	section{
+		background: var(--bg-section);
+	}
+
+	.eye-pass{
+		display:block;
+		position:absolute;
+		top:240px;
+		right:calc(100% - 98%);
+	}
+
+}
+
+@media (min-width:999px) and (max-width:1024px)
+{
+	section{
+		background: var(--bg-section);
+		border-radius:5px;
+		border:1px solid #7B68EE;
+		box-shadow: 2px 3px 3px 3px gray;
+		margin:auto;
+		margin-top:100px;
+		width:420px;
+	}
+
+	.eye-pass{
+		display:block;
+		position:absolute;
+		top:340px;
+		right:310px;
+	}
+}
+
+h1{
+	color:#fff;
+	margin:auto;
+	padding:10px;
+	text-align:center;
+	width:95%;z
+}
+
+img{
+	display:block;
+	margin:auto;
+	padding:15px;
+	width:128px;
+}
+
+.user{
+	background:#ffffff;
+	border:1px solid var(--border-color);
+	border-top-right-radius:5px;
+	border-top-left-radius:5px;
+	color:#483D8B;
+	font-weight:700;
+	margin:10px;
+	padding:10px;
+	text-align:center;
+	width:95%;
+}
+
+.pass{
+	background:#ffffff;
+	color:#483D8B;
+	border:1px solid var(--border-color);
+	border-bottom-right-radius:5px;
+	border-bottom-left-radius:5px;
+	font-weight:700;
+	margin:10px;
+	padding:10px;
+	text-align:center;
+	width:95%;
+}
+
+.lost-password{
+	text-align:center;
+}
+
+.lost-password a{
+	color:#000;
+	font-weight:700;
+	text-decoration:none;
+}
+
+
+
+button{
+	border:1px solid var(--border-color);
+	border-radius:5px;
+	color:#483D8B;
+	font-weight:700;
+	margin:10px;
+	margin-bottom:20px;
+	padding:10px;
+	text-align:center;
+	width:95%;
+}
+
