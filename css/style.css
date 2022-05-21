@@ -31,15 +31,15 @@ body{
 	section{
 		background: var(--bg-section);
 		margin-top:50px;
+		padding:20px;
 	}
 
 	.eye-pass{
 		display:block;
 		position:absolute;
-		top:290px;
-		right:calc(100% - 98%);
+		top:310px;
+		right:calc(100% - 94%);
 	}
-
 }
 
 @media (min-width:600px) and (max-width:998px){
@@ -50,6 +50,7 @@ body{
 		box-shadow: 2px 3px 3px 3px gray;
 		margin:auto;
 		margin-top:100px;
+		padding:10px;
 		width:380px;
 	}
 
@@ -57,9 +58,9 @@ body{
 		display:flex;
 		flex-direction: row-reverse;
 		align-items: right;
-		margin-left:335px;
+		margin-left:315px;
 		position:absolute;
-		top:340px;
+		top:350px;
 	}
 }
 
@@ -72,14 +73,15 @@ body{
 		box-shadow: 2px 3px 3px 3px gray;
 		margin:auto;
 		margin-top:100px;
+		padding:20px;
 		width:360px;
 	}
 
 	.eye-pass{
 		display:block;
 		position:absolute;
-		top:340px;
-		right:330px;
+		top:360px;
+		right:355px;
 	}
 }
 
@@ -148,6 +150,7 @@ img{
 }
 
 .new-account{
+	margin-top:10px;
 	text-align:center;
 }
 
@@ -169,7 +172,7 @@ button{
 	color:#483D8B;
 	font-weight:700;
 	margin:10px;
-	margin-bottom:20px;
+	margin-bottom:10px;
 	padding:10px;
 	text-align:center;
 	width:95%;
