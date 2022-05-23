@@ -6,28 +6,40 @@
 	<meta name="viewport" content="viewport=device-width,initial-scale=1.0"/>
 	<title>Login</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js">
 	</script>
 	<script defer rel="javascript" type="text/javascript" src="./js/utils.js"></script>
+	
 </head>
 <body>	
 	<section>
 		<img src="./data/umbrella.svg" alt="INFOSEC">
 		<h1>Umbrella <span style="color:purple">Purple</span></h1>
-		<form>
+		<form autocomplete="off" action="login.php" method="POST">
 			<input
 				type="text"
 				name="usuario"
 				id="usuario"
 				class="user"
 				placeholder="Usuário"
+				pattern="^[a-zA-Z0-9\d\.]{5,}$"
+				title="Usuário precisa conter letras e números"
+				required
+				minlenght="8"
+				maxlength="32"
 			/>
 			<input 
 				type="password" 
 				name="senha"
 				id="senha"
 				class="pass"
-				placeholder="Senha" 
+				placeholder="Senha"
+				pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,32}$"
+				title="Senha precisa conter letras é numeros"
+				required
+				minlenght="8"
+				maxlength="32" 
 			>
 			<img class="eye-pass"  alt="eye-pass">
 			<div class="lost-password">
@@ -38,6 +50,29 @@
 			</button>
 			<div class="new-account">
 				<a href="#">Criar nova conta.</a>
+			</div>
+			<div 
+				class="icones" 
+				style="margin-left:85px;">
+				<a href="https://www.instagram.com/mvictor.limite" style="text-decoration:none;">
+				<i 
+					id="instagram"
+					class="fa fa-instagram" 
+					style="color:#fff; font-size:36px;padding:8px;">
+					</i>
+				</a>
+				<a href="#" style="text-decoration:none;">
+				<i 
+					class="fa fa-facebook" 
+					style="color:#fff; font-size:36px;padding:8px;">
+					</i>
+				</a>
+				<a href="#" style="text-decoration:none;">
+				<i 
+					class="fa fa-linkedin" 
+					style="color:#fff; font-size:36px;padding:8px;">
+					</i>
+				</a>
 			</div>
 		</form>
 	</section>

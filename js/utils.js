@@ -1,4 +1,8 @@
 var icon_senha = false;
+var senha = document.getElementById('senha');
+senha.oninvalid = function(event){
+       event.target.setCustomValidity('Formato de senha incorreto.');
+}
 
 $(document).ready(function(){
        $('img.eye-pass').attr('src', 'data/eye-pass-desactive.svg');
